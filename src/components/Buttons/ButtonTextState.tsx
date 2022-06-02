@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {FC, useState} from 'react';
 
-const ButtonTextState = () => {
+const ButtonTextState: FC = () => {
+    const [text, setText] = useState('Hi! Click me');
     return (
-        <div>
-            
-        </div>
+        <button onClick={() => setText('Yes! Thank you!')}>
+            { text }
+        </button>
     );
 };
 
