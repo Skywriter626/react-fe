@@ -1,12 +1,12 @@
 export interface IUser {
-    id: number;
+    id: number | string;
     name: string;
     username: string;
     email: string;
-    address: IAddress;
+    address?: IAddress;
     phone: string;
     website: string;
-    company: {name: string; catchPhrase: string; bs: string}
+    company?: {name: string; catchPhrase: string; bs: string}
 }
 
 export interface IAddress {
